@@ -35,12 +35,17 @@ ipAddress = gethostbyname(hostName)
 # print("The User: {} has the IP address".format(MISSING), MISSING)
 
 # Solution 1 (easy, using f):
-print("solution 1 using f:")
+print("\nsolution 1: using f:")
 print(f"The user name is {userName}, and the ip address is {ipAddress}, and the host name is {hostName} ")
 
 # Solution 2 (using .format() Method):
-print("solution 2 using .format():")
-print("The user name is {}, and the ip address is {}, and the host name is {}".format(userName,ipAddress, hostName))
+print("\nsolution 2: using .format():")
+print("The user name is {}, and the ip address is {}, and the host name is {}".format(userName, ipAddress, hostName))
+
+# Solution 3 (another way using .format() Method):
+print("\nsolution 3: another way using .format():")
+myOutput = "The user name is {0}, and the ip address is {1}, and the host name is {2}"
+print(myOutput.format(userName, ipAddress, hostName))
 
 # print the IP address that we got from function gethostbyname()
 # *** This print() should be deleted once the homeowkr is done ***
